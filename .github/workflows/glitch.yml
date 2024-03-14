@@ -4,7 +4,7 @@ on:
   types: [closed] 
 jobs:
   repo-sync:
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - name: repo-sync
