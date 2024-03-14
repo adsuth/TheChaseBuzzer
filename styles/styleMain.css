@@ -6,6 +6,10 @@ body {
     padding: 20px 60px;
 }
 
+.body_host {
+    height: 50vh !important;
+}
+
 button {
     font-family: 'Twoson';
     position: relative;
@@ -23,6 +27,19 @@ a, a:visited {
 
 #firstBuzz {
     min-height: 30px;
+}
+
+.first_buzz_box {
+    outline: 5px solid white;
+    min-width: 20%;
+    margin: 10px 0 0 0;
+    padding: 5px 15px;
+}
+
+.first_buzz {
+    min-height: 30px;
+    margin: 0;
+    padding: 5px 0;
 }
 
 #objection {
@@ -57,9 +74,25 @@ a, a:visited {
     border: dashed;
 }
 
+#interface_host {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    text-align: center;
+    height: 50%;
+}
+
 #interface {
     z-index: -1;
     text-align: center;
+}
+
+#main_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh 0 3vh 0;
 }
 
 #userListPanel {
@@ -88,6 +121,41 @@ a, a:visited {
     min-height: 170px;
     padding-left: 5px;
     padding-bottom: 5px;
+}
+
+.players_list {
+    display: flex;
+    border: dashed;
+    width: 600px;
+    min-height: 170px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.players_list li:not(:first-child) {
+    margin-top: 8px;
+}
+
+#PlayersList_host
+#ChasersList_host {
+    display: flex;
+    border: dashed;
+    width: 1px;
+    min-height: 170px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.box_header {
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+.player_list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 ul {
@@ -170,6 +238,90 @@ ul {
     position: relative;
     top: 5px;
     padding-right: 10px;
+}
+
+.points_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    height: 100%;
+    width: 30%;
+}
+
+.top_button {
+    width: 100%;
+    height: 3rem;
+    margin: 3px;
+}
+
+.bottom_buttons {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    width: 100%;
+}
+
+.bottom_buttons_button {
+    height: 100%;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.bottom_buttons_button:first-child {
+    height: 100%;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-right: 3px;
+}
+
+.button {
+    height: 100%;
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.rec_button {
+    height: 100%;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.header_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#currentScore_container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#currentScore_host {
+    margin: 0;
+}
+
+.points_button_helper_text {
+    font-size: 1rem;
+}
+@media (max-width: 700px) {
+    .points_buttons {
+        width: 100%;
+    }
+
+    .first_buzz_box {
+        min-width: 50%;
+    }
 }
 
 @media (max-width: 600px) {

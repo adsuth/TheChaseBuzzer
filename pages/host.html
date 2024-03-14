@@ -65,35 +65,50 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body class="body_host">
 		<p id="message">hi quetz :]</p>
-		<div id="interface">
-			<p id="currentTeam"></p>
-			Progress:
-			<p id="currentScore"></p>			
-			<button id="plus0" type="button" style="width: 230px; height: 50px; margin: 5px;">+0 Points</button>
-			<br>
-			<button id="plus1" type="button" style="width: 110px; height: 50px;">+1 Point</button>
-			<button id="plus2" type="button" style="width: 110px; height: 50px;">+2 Points</button>
-			<p style="font-size: 11px; margin: 5px;">(all points buttons clear buzzers)</p>
-			<p id="firstBuzz"></p>
-			<p id="objection">
-			</p>
-			<br>
-			<br>
-			<br>
-			<br>
-			<button id="unregisterUsers" type="button" style="height: 30px;">Remove/Reconnect all players</button>
+		<div class="header_buttons">
+			<button id="unregisterUsers" type="button" class="rec_button">
+				Remove/Reconnect all players
+			</button>
+			<button id='clearObjection' type='button' class="rec_button">
+				Clear Objections
+			</button>
 		</div>
-		<div id="userListPanel">
-			<div id="PlayersList">
-				Players:
-				<ul></ul>
+		<div id="interface_host">
+			<div id="main_section">
+				<div id="userListPanel_host">
+					<p class="box_header">Players:</p>
+					<div id="PlayersList_host" class="players_list">
+						<ul class="player_list"></ul>
+					</div>
+				</div>
+				<!-- <p id="currentTeam"></p> -->
+				<div id="currentScore_container">
+					<p id="currentScore_host"></p>
+				</div>
+				<div class="first_buzz_box">
+					<p id="firstBuzz" class="first_buzz"></p>
+				</div>
+				<div class="points_buttons">
+					<div class="top_button">
+						<button id="plus0" type="button" class="button">+0 Points</button>
+					</div>
+					<div class="bottom_buttons">
+						<button id="plus1" type="button" class="bottom_buttons_button">+1 Point</button>
+						<button id="plus2" type="button" class="bottom_buttons_button">+2 Points</button>
+					</div>
+					<p class="points_button_helper_text">(all points buttons clear buzzers)</p>
+				</div>
+				<div id="userListPanel_host">
+					<p class="box_header">Chasers:</p>
+					<div id="ChasersList_host" class="players_list">
+						<ul class="player_list"></ul>
+					</div>			
+				</div>
 			</div>
-			<div id="ChasersList">
-				Chasers:
-				<ul></ul>
-			</div>
+			<!-- <p id="objection"> -->
+			<!-- </p> -->
 		</div>
 	</body>
 </html>
