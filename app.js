@@ -41,7 +41,7 @@ io.on("connection", (socket) => {
   socket.on("buzzerPressed", (newUserName, newTimeStamp) => {
     if (idkList.includes(newUserName)) { 
       const userIndex = idkList.indexOf(newUserName);
-      idkList.splice(userIndex, 1)
+      idkList.splice(userIndex, 1);
     }
 
     let firstBuzzTimeStamp = (function() { 
